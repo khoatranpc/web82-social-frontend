@@ -1,0 +1,11 @@
+.container-account {
+    form {
+        margin: auto;
+
+        .btn {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.6rem;
+        }
+    }
+}
