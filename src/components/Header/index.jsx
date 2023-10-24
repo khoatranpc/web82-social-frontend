@@ -1,10 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Button } from 'antd';
 import logo from '../../assets/mindx-logo1.png';
 import './styles.scss';
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <div className="page-header">
             <div className="logo">
@@ -27,7 +28,9 @@ const Header = () => {
                     </NavLink>
                 </li>
             </ul>
-            <Button>
+            <Button onClick={() => {
+                navigate('/auth/login');
+            }}>
                 Đăng xuất
             </Button>
         </div>
