@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<RootLayout />}>
-          <Route path='home' element={<Home />} />
+          {['', '/home'].map((item, idx) => <Route key={idx} path={item} element={<Home />} />)}
           <Route path='personal' element={<Personal />} />
           <Route path='account' element={<Account />} />
         </Route>
