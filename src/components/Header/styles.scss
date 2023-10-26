@@ -23,7 +23,9 @@
     }
 
     .list-router-page {
+        flex: 1;
         display: flex;
+        justify-content: center;
         list-style: none;
         gap: 2.8rem;
 
@@ -41,10 +43,25 @@
                 color: var(--white-1);
             }
 
+            .icon-header {
+                width: 2rem;
+                display: none;
+            }
+
             &.active {
                 background-color: var(--light-red);
                 color: var(--white-1);
+
+                .icon-header {
+                    fill: var(--white-1);
+
+                    path {
+                        stroke: var(--white-1) !important;
+                        fill: var(--white-1) !important;
+                    }
+                }
             }
+
         }
     }
 }

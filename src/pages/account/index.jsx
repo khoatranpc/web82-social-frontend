@@ -16,7 +16,7 @@ const Account = () => {
                 // onFinish={onSubmit}
                 name="basic"
                 labelCol={{
-                    span: 6,
+                    span: 8,
                 }}
                 wrapperCol={{
                     span: 16,
@@ -75,26 +75,19 @@ const Account = () => {
                 >
                     <Input.Password size="small" />
                 </Form.Item>
-                <Form.Item
-                    wrapperCol={{
-                        offset: 8,
-                        span: 14,
-                    }}
-                >
-                    <div className="btn">
-                        <Button size="small" htmlType="submit">
-                            Cập nhật
-                        </Button>
-                        <Button
-                            size="small"
-                            className="btn-signup"
-                            onClick={() => {
-                            }}
-                        >
-                            Huỷ
-                        </Button>
-                    </div>
-                </Form.Item>
+                <div className="btn">
+                    <Button size="small" htmlType="submit">
+                        Cập nhật
+                    </Button>
+                    <Button
+                        size="small"
+                        className="btn-signup"
+                        onClick={() => {
+                        }}
+                    >
+                        Huỷ
+                    </Button>
+                </div>
             </Form>
         </div>
     )
